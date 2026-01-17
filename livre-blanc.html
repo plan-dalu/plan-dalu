@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVRE BLANC : Le Plan Dalu - Économie de la Machine</title>
+
+    <meta name="description"
+        content="Démonstration technique du Plan Dalu : SUB, Robot Tax et modèle de société post-travail.">
+    <meta property="og:title" content="LIVRE BLANC - Plan Dalu">
+    <meta name="robots" content="index, follow">
+
+    <style>
+        :root {
+            --orange-dalu: #CC5500;
+            --bleu-dalu: #0055aa;
+            --bg-papier: #ffffff;
+            --noir-art: #1a1a1a;
+            --orange-clair: #fff3e6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .paper {
+            max-width: 900px;
+            margin: 50px auto;
+            background: var(--bg-papier);
+            padding: 60px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            border-top: 15px solid var(--orange-dalu);
+        }
+
+        h1 {
+            color: var(--noir-art);
+            text-align: center;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .version {
+            text-align: center;
+            color: var(--orange-dalu);
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--bleu-dalu);
+            margin-top: 50px;
+            border-left: 8px solid var(--orange-dalu);
+            padding-left: 15px;
+            text-transform: uppercase;
+        }
+
+        .highlight-box {
+            background: #fdf2e9;
+            border: 2px solid var(--orange-dalu);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .source-box {
+            background: #f0f7ff;
+            border-left: 5px solid var(--bleu-dalu);
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+
+        table th {
+            background-color: var(--bleu-dalu);
+            color: white;
+            padding: 20px;
+            text-transform: uppercase;
+        }
+
+        table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .formula {
+            font-family: 'Courier New', monospace;
+            background: var(--noir-art);
+            color: #00ff00;
+            padding: 30px;
+            text-align: center;
+            font-size: 1.4em;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .token-shield {
+            background: var(--orange-clair);
+            border: 2px dashed var(--orange-dalu);
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        .nav-footer {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            border-top: 2px solid #eee;
+            padding-top: 30px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: 0.3s;
+            text-align: center;
+            flex: 1;
+        }
+
+        .btn-outline {
+            border: 2px solid var(--bleu-dalu);
+            color: var(--bleu-dalu);
+        }
+
+        .btn-fill {
+            background: var(--orange-dalu);
+            color: white;
+            border: 2px solid var(--orange-dalu);
+        }
+
+        @media (max-width: 768px) {
+            .paper {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            .nav-footer {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="paper">
+        <h1>LIVRE BLANC DU PLAN DALU</h1>
+        <div class="version">DOCUMENT OFFICIEL - SYSTÈME SOUVERAIN 2026</div>
+
+        <p>Ce document constitue la base technique de la sculpture sociale proposée par l'artiste DALU. Il démontre la
+            viabilité du passage d'une économie de dette à une économie de productivité machine.</p>
+
+        <h2>I. Fondements & Précurseurs</h2>
+        <p>Le Plan Dalu concrétise des visions économiques majeures portées dès 2017 :</p>
+
+        <div class="source-box">
+            <strong>• Bill Gates (20/02/2017) :</strong> A théorisé la taxation des robots pour compenser la perte des
+            revenus du travail humain.
+            <br><em>Source : <a href="https://www.lesechos.fr/2017/02/taxer-les-robots-bill-gates-sur-la-meme-longueur-donde-que-benoit-hamon-162383" target="_blank">Les Échos, 2017</a></em>
+        </div>
+
+        <div class="source-box">
+            <strong>• Benoît Hamon (15/03/2017) :</strong> Précurseur du Revenu Universel d'Existence (600€). Le Plan
+            Dalu optimise ce modèle pour atteindre 1000€.
+            <br><em>Source : <a href="https://www.lemonde.fr/les-decodeurs/article/2017/03/15/qui-beneficierait-du-revenu-universel-de-benoit-hamon_5094563_4355770.html" target="_blank">Le Monde, 2017</a></em>
+        </div>
+
+        <h2>II. Évolution du Salaire Universel (SUB)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Phase de Déploiement</th>
+                    <th>Montant Mensuel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Rodage (Années 1-2)</strong></td>
+                    <td>900 €</td>
+                </tr>
+                <tr>
+                    <td><strong>Croissance (Années 3-5)</strong></td>
+                    <td>1 000 €</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>III. Financement : La Robot Tax</h2>
+        <div class="formula">
+            VALEUR PRODUITE PAR MACHINE <br>
+            - COÛT ÉNERGÉTIQUE <br>
+            = DIVIDENDE CITOYEN (SUB)
+        </div>
+
+        <h2>IV. Territorialité : Le Bouclier Économique</h2>
+        <div class="token-shield">
+            <h3 style="margin-top:0; color:var(--orange-dalu);">🇪🇺 / 🇫🇷 Validité du Token Portefeuille</h3>
+            <p>Le SUB est versé sous forme de Tokens numériques via Blockchain. Son usage est strictement défini pour
+                protéger l'économie réelle :</p>
+            <ul>
+                <li><strong>Option A (Europe) :</strong> Valable dans toute l'Union Européenne si les États membres
+                    adoptent les terminaux Blockchain Dalu.</li>
+                <li><strong>Option B (Souveraineté France) :</strong> Si l'Europe refuse l'équipement, la validité du
+                    Token est restreinte aux frontières françaises.</li>
+            </ul>
+            <p><strong>Impact local :</strong> Cette mesure garantit une relance massive du
+                <strong>petit commerce</strong>, de l'<strong>artisanat</strong> et du
+                <strong>tourisme français</strong>. L'argent ne peut plus fuir vers les plateformes numériques
+                étrangères.</p>
+        </div>
+
+        <h2>V. Sécurité & Anonymat (Type TOR)</h2>
+        <div class="highlight-box">
+            <strong>Confidentialité Absolue :</strong> Le système utilise des protocoles décentralisés (type "Tor") pour
+            garantir l'anonymat des transactions. L'État garantit la monnaie, mais ne surveille pas l'usage privé du
+            citoyen.
+        </div>
+
+        <h2>VI. La Machine : Ressource Infinie</h2>
+        <p>Contrairement au pétrole, la machine peut être réparée et reconstruite par d'autres machines. Elle constitue
+            le socle d'une économie de l'abondance, libérée de l'esclavage salarié.</p>
+
+        <div class="nav-footer">
+            <a href="index.html" class="btn btn-outline">← Accueil</a>
+            <a href="tract-manifeste.html" class="btn btn-outline">Le Manifeste</a>
+            <a href="gouvernance.html" class="btn btn-fill">Gouvernance →</a>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 40px; color: #666; font-size: 0.9em;">
+        © 2026 Plan Dalu - Souveraineté & Progrès | Système de Sculpture Sociale
+    </footer>
+<p style="text-align: center;">
+    <a href="sitemap.html" style="color: #666; font-size: 0.8em; text-decoration: none;">Voir le Plan du Site
+        (Sitemap)</a>
+</p>
+</body>
+
+</html>
